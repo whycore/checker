@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Walrus Protocol Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-section">
+            <h1>Walrus Protocol Explorer</h1>
+            <input type="text" id="addressInput" placeholder="Enter wallet address">
+            <button onclick="checkWallet()">Check Wallet</button>
+        </div>
+
+        <div id="results" class="hidden">
+            <div class="balance-section">
+                <h2>Token Balance</h2>
+                <div id="tokenList"></div>
+            </div>
+
+            <div class="objects-section">
+                <h2>Objects Overview</h2>
+                <div id="objectStats"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
